@@ -1,7 +1,7 @@
 {
   "name": "react-native-wallet-core",
-  "version": "0.1.0",
-  "description": "A react native wrapper around Trust Wallet Core for Android and iOS",
+  "version": "0.0.0",
+  "description": "A React Native wrapper around the Trust Wallet Core wallet library for Android and iOS",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -31,11 +31,13 @@
   },
   "keywords": [
     "react-native",
-    "ios",
-    "android"
+    "trust wallet",
+    "wallet core",
+    "wallet",
+    "cryptocurrency"
   ],
   "repository": "https://github.com/Liamandrew/react-native-wallet-core",
-  "author": "Liamandrew <liamandrew@hotmail.com> (https://github.com/Liamandrew)",
+  "author": "Liamandrew (https://github.com/Liamandrew)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Liamandrew/react-native-wallet-core/issues"

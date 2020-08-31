@@ -1,17 +1,23 @@
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import WalletCore from 'react-native-wallet-core';
+import TrustWalletCore from 'react-native-wallet-core';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [mnemonic, setMnemonic] = React.useState<string | undefined>();
 
   React.useEffect(() => {
-    WalletCore.multiply(3, 7).then(setResult);
+    const createWallet = async () => {
+      const wallet = await TrustWalletCore.createWallet(128, '');
+
+      setMnemonic(wallet.mnemonic);
+    };
+
+    createWallet();
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Mnemonic: {mnemonic || ''}</Text>
     </View>
   );
 }
