@@ -28,6 +28,9 @@ const { mnemonic, seed } = await TrustWalletCore.importWalletFromMnemonic("rippl
 // Import a wallet from hexString. Will also load into local memory
 const { mnemonic, seed } = await TrustWalletCore.importWalletFromHexString("<HEX_STRING>", "");
 
+// Clear a loaded wallet from local memory
+await TrustWalletCore.cleanup();
+
 // Generate the default address for coin
 const address = await TrustWalletCore.getAddressForCoin("ethereum");
 
