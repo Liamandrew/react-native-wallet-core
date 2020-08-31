@@ -1,6 +1,8 @@
 # react-native-wallet-core
 
-A react native wrapper around Trust Wallet Core for Android and iOS
+A React Native wrapper around the Trust Wallet Core wallet library for Android and iOS.
+
+For more information about the underlying library, please read the comprehensive documentation provided by Trust Wallet [here.](https://developer.trustwallet.com/wallet-core)
 
 ## Installation
 
