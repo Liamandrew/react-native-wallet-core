@@ -1,4 +1,4 @@
-package com.reactnativetrustwalletcore
+package com.reactnativewalletcore
 
 import com.facebook.react.bridge.*
 import com.google.protobuf.ByteString
