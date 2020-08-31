@@ -1,6 +1,6 @@
 {
   "name": "react-native-wallet-core",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A React Native wrapper around the Trust Wallet Core wallet library for Android and iOS",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -121,7 +121,10 @@
       ]
     }
   },
-  "eslintIgnore": ["node_modules/", "lib/"],
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
@@ -132,6 +135,10 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   }
 }
