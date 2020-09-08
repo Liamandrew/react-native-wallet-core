@@ -119,8 +119,11 @@ Generate and retrieve the default address for a coin. The address is generated u
     * `gasLimit` *string (optional)* - Should be a hex string. (Default is 5208)
     * `nonce` *string (optional)* - The count of the number of outgoing transactions. Should be a hex string. (Default is 00)
 * **Returns**
-    *  `address` *string* - The public key of the address
-    *  `privateKey` *string* - The private key of the address
+    *  `r` *string*
+    *  `s` *string*
+    *  `v` *string*
+    *  `encoded` *string*
+    *  `hashValue` *string*
 
 ```typescript
 const { r, s, v, encoded, hashValue } = await TrustWalletCore.signTransactionForCoin("ethereum", {
